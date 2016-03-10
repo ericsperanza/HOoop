@@ -13,4 +13,4 @@ class Blanco(object):
         #(interseccion de invervalos)
         # despues aplicar los parametros del blanco sobre ese intervalo de tiempo
         pass
-        
+        (tiempo_final_del_blanco - tiempo_final_del_blanco).seconds

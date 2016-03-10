@@ -1,10 +1,18 @@
+import numpy as np
+
 class Detector(object):
 
     def __init__(self):
-        #TODO: completar con la inicializacion de los parametros del objeto
-        pass
+        self.result = False
+        self.counter = 0
 
     def detectar(self, senal):
 
-        #TODO: Completar
-        pass
+        noise = ((np.random.random())*0.001)
+        for i in senal:
+            if i > noise:
+                self.counter += 1
+        if self.counter > len(senal)/2:
+            self.result = True
+
+        return self.result

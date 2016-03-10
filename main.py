@@ -23,9 +23,13 @@ def main():
     fase = 1
     frecuencia = 20*math.pi
 
-    #TODO construir un nuevo genrador de senales
-
+    #Construyor un nuevo generador de senales
+    new_Gen = generador.Generador(amplitud,fase,frecuencia)
+    senal_generada = (new_Gen.generar(tiempo_inicial,tiempo_final))
+    print senal_generada
     #TODO construir un detector
+    new_Det = detector.Detector()
+    print(new_Det.detectar(senal_generada))
 
     #TODO construir un nuevo radar
 
@@ -39,7 +43,7 @@ def main():
 
     #TODO contruir un medio
 
-    #TODO construir un radar
+    #TODO llamar al radar
 
 if __name__ == "__main__":
     main()
