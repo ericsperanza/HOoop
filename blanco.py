@@ -13,4 +13,8 @@ class Blanco(object):
         #(interseccion de invervalos)
         # despues aplicar los parametros del blanco sobre ese intervalo de tiempo
         pass
-        (tiempo_final_del_blanco - tiempo_final_del_blanco).seconds
+        frec = (tiempo_final - tiempo_inicial).seconds/ len(senal)
+        # ahora calculo cuantas muestras por seg tengo
+        samples_per_sec = len(senal) / (tiempo_final - tiempo_inicial).seconds
+        """
+        Ahora tengo que ca
